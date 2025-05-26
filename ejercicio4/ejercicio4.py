@@ -11,10 +11,26 @@ while True:
 
 while True:
     try:
-        m = int(input("Ingrese cuantas columnas quiere que tenga la matriz"))
+        m = int(input("Ingrese cuantas columnas quiere que tenga la matriz: "))
         if m <= 0:
             print("Error. El valor ingresado tiene que ser positivo y mayor a 0")
             continue
         break
     except ValueError:
         print("Error. Porfavor ingrese un valor válido")
+
+# b) Crear la matriz
+matriz = []
+
+## Pedir los valores al usuario
+for fila in range(n):
+    nueva_fila = []
+    for columna in range(m):
+        while True:
+            try:
+                num = int(input(f"Ingresa el valor de la fila {fila + 1} columna {columna + 1}: "))
+                break
+            except ValueError:
+                print("Error. Porfavor ingrese un valor válido")
+        nueva_fila.append(num)
+    matriz.append(nueva_fila)
