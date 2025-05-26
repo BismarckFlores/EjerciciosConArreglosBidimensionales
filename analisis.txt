@@ -9,3 +9,15 @@ Que necesito hacer:
     - una forma para sumar todas las ventas en cada zono y ver cual es la que vendio mas, probablemente pueda hacerlo con algunos for y utilizando ifs para detectar el mayor
     - Tambien tener una forma de ver cual es el que vendio menos de todos los vendedores
     - Finalmente sumar todas las ventas en general lo cual lo puedo hacer con un simple sum a la lista, almenos esa es la idea inicial, pero probablemente se complique mas que solo eso
+
+Structura de la matriz de ventas
+
+ventas = [
+
+    [Zona 1, Zona 2, Zona 3, Zona 4] Vendedor 1
+
+    [Zona 1, Zona 2, Zona 3, Zona 4] Vendedor 2
+
+    [Zona 1, Zona 2, Zona 3, Zona 4] Vendedor 3
+
+]
