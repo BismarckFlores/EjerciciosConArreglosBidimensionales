@@ -50,3 +50,10 @@ for vendedor in range(num_vendedores):
 
 print(suma_vendedor)
 print(f"El vendedor con menos ventas fue el {vendedores[vendedor_min]}, con un total de {min_ventas_vendedor}")
+
+# c) Suma de todas las ventas
+total_ventas = 0
+
+for vendedor in range(num_vendedores):
+    total_ventas += sum(ventas[vendedor])
+print(f"Las ventas totales son de {total_ventas} computadoras")
