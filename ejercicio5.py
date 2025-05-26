@@ -26,9 +26,6 @@ for zona in range(num_zonas):
         mas_ventas_zona = venta
         zona_max = zona
 
-print(ventas_zona)
-print(f"La zona con mas ventas es la {zonas[zona_max]}, con una venta de {mas_ventas_zona} computadoras")
-
 
 # b) Sumar ventas por vendedor
 suma_vendedor = []
@@ -48,12 +45,38 @@ for vendedor in range(num_vendedores):
         min_ventas_vendedor = venta
         vendedor_min = vendedor
 
-print(suma_vendedor)
-print(f"El vendedor con menos ventas fue el {vendedores[vendedor_min]}, con un total de {min_ventas_vendedor}")
 
 # c) Suma de todas las ventas
 total_ventas = 0
 
 for vendedor in range(num_vendedores):
     total_ventas += sum(ventas[vendedor])
-print(f"Las ventas totales son de {total_ventas} computadoras")
+
+# d) Mostrar todos los anteriores puntos de manera estetica
+print("-" * 75)
+
+# Encabezado de la tabla
+print(f"{'':15}", end="")
+for zona in zonas:
+    print(f"|{zona:^10}", end=" ")
+print("| Total    |")
+print("-" * 75)
+
+# Mostrar ventas por vendedor
+for i in range(len(ventas)):
+    print(f"{vendedores[i]:15}", end="")
+    for venta in ventas[i]:
+        print(f"|{venta:^10}", end=" ")
+    print(f"|{suma_vendedor[i]:^10}|")
+    print("-" * 75)
+
+# Mostrar total por zona
+print(f"{'Total zona':15}", end="")
+for total in ventas_zona:
+    print(f"|{total:^10}", end=" ")
+print(f"|{total_ventas:^10}|")
+print("-" * 75)
+
+print(f"\nLa zona con mas ventas es la {zonas[zona_max]}, con una venta de {mas_ventas_zona} computadoras")
+print(f"\nEl vendedor con menos ventas fue el {vendedores[vendedor_min]}, con un total de {min_ventas_vendedor}")
+print(f"\nLas ventas totales son de {total_ventas} computadoras\n")
