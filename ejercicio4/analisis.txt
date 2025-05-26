@@ -8,3 +8,18 @@ Se necesita que:
     - Mostrar para cada fila la suma de estas
     - Mostrar por columna el promedio de estas
     - indicar donde esta el mayor valor de la matriz
+
+matriz = [
+    [x, x, x...],
+    [x, x, x...],
+    [x, x, x...]...
+]
+
+Dividimos la actividad en los siguientes incisos:
+    a. Solicitar los datos al usuario
+    b. Crear la matriz
+        - Pedir al usuario que ingrese cada valor de la matriz
+    c. Sumar por filas
+    d. Promediar por columnas
+    e. Encontrar el valor mas grande dentro de la matriz
+    f. Mostrar todo al usuario
