@@ -34,3 +34,19 @@ for fila in range(n):
                 print("Error. Porfavor ingrese un valor válido")
         nueva_fila.append(num)
     matriz.append(nueva_fila)
+
+# c) Suma por filas
+suma_fila = []
+
+for fila in matriz:
+    suma = sum(fila)
+    suma_fila.append(suma)
+
+print("-" * 17)
+for fila in matriz:
+    for columna in fila:
+        print(f"|{columna:>6}", end = " ")
+    print("|")
+    print("-" * 17)
+
+print(suma_fila)
