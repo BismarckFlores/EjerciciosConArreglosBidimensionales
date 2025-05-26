@@ -1,0 +1,10 @@
+Hacer una matriz con numeros enteros  de "n" filas y "m" columnas, ambas positivas y menores que 10.
+
+n < 10 ; m < 10
+
+Se necesita que:
+    - Se pueda solicitar al usuario el valor de n y m con las restricciones aplicadas
+    - Ingresar cada valor de la matriz
+    - Mostrar para cada fila la suma de estas
+    - Mostrar por columna el promedio de estas
+    - indicar donde esta el mayor valor de la matriz
