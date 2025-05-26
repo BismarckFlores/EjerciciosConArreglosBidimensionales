@@ -42,6 +42,17 @@ for fila in matriz:
     suma = sum(fila)
     suma_fila.append(suma)
 
+# d) Promedio por columna
+prom_columna = []
+
+for columna in range(m):
+    suma = 0
+    prom = 0
+    for fila in range(n):
+        suma += matriz[fila][columna]
+    prom = suma / n
+    prom_columna.append(prom)
+
 print("-" * 17)
 for fila in matriz:
     for columna in fila:
@@ -50,3 +61,4 @@ for fila in matriz:
     print("-" * 17)
 
 print(suma_fila)
+print(prom_columna)
