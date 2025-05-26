@@ -53,6 +53,14 @@ for columna in range(m):
     prom = suma / n
     prom_columna.append(prom)
 
+# e) Valor mas grande
+valor_grande = 0
+
+for fila in matriz:
+    for columna in fila:
+        if columna > valor_grande:
+            valor_grande = columna
+
 print("-" * 17)
 for fila in matriz:
     for columna in fila:
@@ -62,3 +70,4 @@ for fila in matriz:
 
 print(suma_fila)
 print(prom_columna)
+print(valor_grande)
