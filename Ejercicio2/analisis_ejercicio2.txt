@@ -1,0 +1,5 @@
+se tiene que capturar 5 estudiantes
+por cada estudiante pedir 3 calificaciones
+con esos datos, imprimirlos en una tabla, junto a su promedio
+
+se ordenan los 5 estudiantes junto a sus datos en una sola tabla
