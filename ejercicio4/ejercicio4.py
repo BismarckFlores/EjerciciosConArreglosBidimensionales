@@ -68,7 +68,7 @@ print("-" * (10 + (m * 12) + 11))
 ## Encabezado de la tabla
 print(f"{'':10}", end="")
 for col in range(m):
-    print(f"|  Col {col + 1}   ", end="")
+    print(f"|{f"Col {col + 1}":>10}", end="")
 print("| Total Col |")
 print("-" * (10 + (m * 12) + 11))
 
