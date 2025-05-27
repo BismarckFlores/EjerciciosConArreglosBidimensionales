@@ -61,13 +61,29 @@ for fila in matriz:
         if columna > valor_grande:
             valor_grande = columna
 
-print("-" * 17)
-for fila in matriz:
-    for columna in fila:
-        print(f"|{columna:>6}", end = " ")
-    print("|")
-    print("-" * 17)
 
-print(suma_fila)
-print(prom_columna)
-print(valor_grande)
+# f) Mostrar todo al usuario
+print("-" * (10 + (m * 12) + 11))
+
+## Encabezado de la tabla
+print(f"{'':10}", end="")
+for col in range(m):
+    print(f"|  Col {col + 1}   ", end="")
+print("| Total Col |")
+print("-" * (10 + (m * 12) + 11))
+
+## Cuerpo de la tabla con encabezado lateral
+for fila in range(n):
+    print(f"{f'Fila {fila + 1}':<10}", end="")
+    for columna in range(m):
+        print(f"|{matriz[fila][columna]:>10}", end="")
+    print(f"|{suma_fila[fila]:11}|")
+    if fila < n:
+        print("-" * (10 + (m * 12) + 11))
+
+## Fila de promedio
+print(f"{'Promedio':<10}", end="")
+for columna in range(m):
+    print(f"|{prom_columna[columna]:>10.2f}", end="")
+print("|", f" " * 9, "|")
+print("-" * (10 + (m * 12) + 11))
